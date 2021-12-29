@@ -1,0 +1,3 @@
+{% for ca in cats %}
+    <li><a href="{% url 'update-category' shopId.id ca.id %}">{{ ca.category_title }}</a></li>
+{% endfor %}
